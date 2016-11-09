@@ -2,93 +2,101 @@
 <html>
 
 <head>
-    <title>
-        typopo — demo
-    </title>
+	<title>
+		typopo — demo
+	</title>
 
-    <!-- meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="http://tota.sk/assets/less/bootstrap.css">
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="http://tota.sk/assets/less/bootstrap.css">
 
 </head>
 
 <body>
 
-    <script type="text/javascript" src="js/typopo.min.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <!-- tool — interface -->
+		ga('create', 'UA-87122612-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 
-    <div class="tota-content tota-translit">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
+	<script type="text/javascript" src="js/typopo.min.js"></script>
 
-                <h1 class="translit__title">typopo — demo</h1>
+	<!-- tool — interface -->
 
-                <div class="translit__action-area">
-                    <div class="translit__action-label">
-                        Correct typos
-                    </div>
-                    <button id="correct_typos_en" class="translit__action btn">
-                        English
-                    </button>
-                    <button id="correct_typos_rue" class="translit__action btn">
-                        Rusyn
-                    </button>
-                    <button id="correct_typos_sk" class="translit__action btn">
-                        Slovak
-                    </button>
-                    <button id="correct_typos_cz" class="translit__action btn">
-                        Czech
-                    </button>
-                </div>
+	<div class="tota-content tota-translit">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
 
+				<h1 class="translit__title">typopo — demo</h1>
 
-                <textarea id="textarea" placeholder="Enter some text" class="translit__textarea" autofocus>
-                  The CaTerPILLar    and Alice looked at each other for    some time in silence  : at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.
-           "Who are you? ” said the Caterpillar .
-           This was not an encouraging opening for a conversation. Alice replied, rather shyly, ”I - I hardly know, sir, just at present - at least I know who I was when I got up this morning, but I think I must have been changed several times since then".
-
-           ,,What do you mean by that  ?” said the CAterPilLAr sternly. ”Explain yourself!"
-           ” I can't explain myself , I'm afraid, sir" said Alice, “because I'm not myself, you see“.
-           ,,I don't see ,“ said the Caterpillar.
-
-
-            within double quotes "there are single 'quotes with mix'd punctuation', you see."
-
-            It has ended. … and we were there.
-				</textarea>
+				<div class="translit__action-area">
+					<div class="translit__action-label">
+						Correct typos
+					</div>
+					<button id="correct_typos_en" class="translit__action btn">
+						English
+					</button>
+					<button id="correct_typos_rue" class="translit__action btn">
+						Rusyn
+					</button>
+					<button id="correct_typos_sk" class="translit__action btn">
+						Slovak
+					</button>
+					<button id="correct_typos_cz" class="translit__action btn">
+						Czech
+					</button>
+				</div>
 
 
-                </div>
-            </div>
+				<textarea id="textarea" placeholder="Enter some text" class="translit__textarea" autofocus>
+			The CaTerPILLar    and Alice looked at each other for    some time in silence  : at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.
+		 "Who are you? ” said the Caterpillar .
+		 This was not an encouraging opening for a conversation. Alice replied, rather shyly, ”I - I hardly know, sir, just at present - at least I know who I was when I got up this morning, but I think I must have been changed several times since then".
+
+		 ,,What do you mean by that  ?” said the CAterPilLAr sternly. ”Explain yourself!"
+			 ” I can't explain myself , I'm afraid, sir" said Alice, “because I'm not myself, you see“.
+			 ,,I don't see ,“ said the Caterpillar.
 
 
+		within double quotes "there are single 'quotes with mix'd punctuation', you see."
+
+			It has ended. ... and we were there.
+		</textarea>
 
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+				</div>
+			</div>
 
-    <script>
-        $( "#correct_typos_en" ).click(function() {
-            $('#textarea').val(correct_typos($('#textarea').val(), 'en'));
-        });
 
-        $( "#correct_typos_rue" ).click(function() {
-			$('#textarea').val(correct_typos($('#textarea').val(), 'rue'));
-        });
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
-        $( "#correct_typos_sk" ).click(function() {
-			$('#textarea').val(correct_typos($('#textarea').val(), 'sk'));
-        });
+	<script>
+		$( "#correct_typos_en" ).click(function() {
+			$('#textarea').val(correct_typos($('#textarea').val(), 'en'));
+		});
 
-        $( "#correct_typos_cz" ).click(function() {
-			$('#textarea').val(correct_typos($('#textarea').val(), 'cs'));
-        });
+		$( "#correct_typos_rue" ).click(function() {
+		$('#textarea').val(correct_typos($('#textarea').val(), 'rue'));
+		});
 
-    </script>
+		$( "#correct_typos_sk" ).click(function() {
+		$('#textarea').val(correct_typos($('#textarea').val(), 'sk'));
+		});
+
+		$( "#correct_typos_cz" ).click(function() {
+		$('#textarea').val(correct_typos($('#textarea').val(), 'cs'));
+		});
+
+	</script>
 
 
 </body>
