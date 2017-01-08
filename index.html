@@ -94,15 +94,18 @@
 		});
 
 		$( "#correct_typos_rue" ).click(function() {
-		$('#textarea').val(correct_typos($('#textarea').val(), 'rue'));
+			$('#textarea').val(correct_typos($('#textarea').val(), 'rue'));
+			ga('send', 'event', 'typopo', 'correct_typos', 'rue');
 		});
 
 		$( "#correct_typos_sk" ).click(function() {
-		$('#textarea').val(correct_typos($('#textarea').val(), 'sk'));
+			$('#textarea').val(correct_typos($('#textarea').val(), 'sk'));
+			ga('send', 'event', 'typopo', 'correct_typos', 'sk');
 		});
 
 		$( "#correct_typos_cz" ).click(function() {
-		$('#textarea').val(correct_typos($('#textarea').val(), 'cs'));
+			$('#textarea').val(correct_typos($('#textarea').val(), 'cs'));
+			ga('send', 'event', 'typopo', 'correct_typos', 'cs');
 		});
 
 	</script>
