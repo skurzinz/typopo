@@ -3,7 +3,7 @@
 
 <head>
 	<title>
-		typopo
+		Redirecting to typopo…
 	</title>
 
 	<!-- meta -->
@@ -17,99 +17,23 @@
 		.translit__title {font-weight: 700;}
 	</style>
 
+	<link rel="canonical" href="http://typopo.tota.sk/"/>
+	<meta http-equiv="refresh" content="0;url=http://typopo.tota.sk/" />
 </head>
 
+
 <body>
-
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-87122612-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-
-	<script type="text/javascript" src="js/typopo.min.js"></script>
-
-	<!-- tool — interface -->
 
 	<div class="tota-content tota-translit">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 
-				<h1 class="translit__title">typopo</h1>
-
-				<div class="translit__action-area">
-					<div class="translit__action-label">
-						Correct typos
-					</div>
-					<button id="correct_typos_en" class="translit__action btn">
-						English
-					</button>
-					<button id="correct_typos_rue" class="translit__action btn">
-						Rusyn
-					</button>
-					<button id="correct_typos_sk" class="translit__action btn">
-						Slovak
-					</button>
-					<button id="correct_typos_cz" class="translit__action btn">
-						Czech
-					</button>
-				</div>
-
-
-				<textarea id="textarea" placeholder="Enter some text" class="translit__textarea" autofocus>
-					The cATERPILLAR    and Alice looked at each other for    some time in silence  : at last the Caterpillar took the hookah out of its mouth, and addressed her in a languid, sleepy voice.
-				 "Who are you? ” said the Caterpillar .
-				 This was not an encouraging opening for a conversation. Alice replied, rather shyly, ”I - I hardly know, sir, just at present - at least I know who I was when I got up this morning, but I think I must have been changed several times since then".
-
-				 ,,What do you mean by that  ?” said the cATERPILLAR sternly. ”Explain yourself!"
-					 ” I can't explain myself , I'm afraid, sir" said Alice, “because I'm not myself, you see“.
-					 ,,I don't see ,“ said the Caterpillar.
-
-
-				within double quotes "there are single 'quotes with mix'd punctuation', you see."
-
-					It has ended. ... and we were there.
-
-					Give me some example,       E. g. apples, oranges, ......
-
-					He said: "Here's 12" record."
-				</textarea>
-
+					<h1 class="translit__title">Redirecting you to <a href="http://typopo.tota.sk/">typopo.tota.sk</a></h1>
+					<p><a href="http://typopo.tota.sk/">Click here</a> if redirect does not happen automatically.</p>
 
 				</div>
 			</div>
-
-
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-	<script>
-		$( "#correct_typos_en" ).click(function() {
-			$('#textarea').val(correct_typos($('#textarea').val(), 'en'));
-			ga('send', 'event', 'typopo', 'correct_typos', 'en');
-		});
-
-		$( "#correct_typos_rue" ).click(function() {
-			$('#textarea').val(correct_typos($('#textarea').val(), 'rue'));
-			ga('send', 'event', 'typopo', 'correct_typos', 'rue');
-		});
-
-		$( "#correct_typos_sk" ).click(function() {
-			$('#textarea').val(correct_typos($('#textarea').val(), 'sk'));
-			ga('send', 'event', 'typopo', 'correct_typos', 'sk');
-		});
-
-		$( "#correct_typos_cz" ).click(function() {
-			$('#textarea').val(correct_typos($('#textarea').val(), 'cs'));
-			ga('send', 'event', 'typopo', 'correct_typos', 'cs');
-		});
-
-	</script>
-
 
 </body>
 
